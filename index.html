@@ -33,8 +33,23 @@
                 <label for="perfil">Link de Perfil Profissional:</label>
                 <input type="text" id="perfil" name="perfil">
             </div>
+            <label for="anosExperiencia">Anos de Experiência:</label>
+            <input type="number" id="anosExperiencia" name="anosExperiencia" required><br><br>
+
+            <label for="barbeariasAnteriores">Barbearias Anteriores:</label>
+            <input type="text" id="barbeariasAnteriores" name="barbeariasAnteriores" required><br><br>
+
+            <label for="especializacoes">Especializações ou Habilidades:</label>
+            <input type="text" id="especializacoes" name="especializacoes"
+                placeholder="Exemplo... Cortes classicos, tesoura, barbas etc..." required><br><br>
+
+            <label for="bairro">Bairro onde Reside:</label>
+            <input type="text" id="bairro" name="bairro" required><br><br>
+
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required><br><br>
             <div class="form-group">
-                <label for="sobre">Conte um pouco sobre você:</label>
+                <label for="sobre">Fale sobre sua Experiência:</label>
                 <textarea id="sobre" name="sobre" rows="4" cols="50" required></textarea><br><br>
             </div>
             <input type="submit" id="button"></input>
@@ -57,31 +72,6 @@
     <script type="text/javascript">
         emailjs.init('9-ptH8e60iiQyco21')
     </script>
-
-
-    <!-- <script>
-        const btn = document.getElementById('button');
-
-        document.getElementById('form')
-            .addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                btn.value = 'Enviando...';
-
-                const serviceID = 'default_service';
-                const templateID = 'template_zmmh948';
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        btn.value = 'Send Email';
-                        alert('Email enviado, boa sorte !');
-                    }, (err) => {
-                        btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
-                    });
-            });
-    </script> -->
-
 
 
 </body>
