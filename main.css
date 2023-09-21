@@ -31,6 +31,7 @@ button {
 
 .form-group {
     margin-bottom: 15px;
+    max-height: 70px;
 }
 
 label,
@@ -57,7 +58,8 @@ textarea {
     cursor: pointer;
     width: 40%;
     font-family: "Gin W00 Round";
-    margin-top: -40px;
+    margin-top: 65px;
+    /* display: block; */
 
 }
 
