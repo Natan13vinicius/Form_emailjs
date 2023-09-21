@@ -30,11 +30,11 @@
                 <input type="tel" id="telefone" name="telefone" required>
             </div>
             <div class="form-group">
-                <label for="perfil">Link de Perfil Profissional :</label>
+                <label for="perfil">Link de Perfil Profissional:</label>
                 <input type="text" id="perfil" name="perfil">
             </div>
             <div class="form-group">
-                <label for="sobre">Conte um pouco sobre você:</label><br>
+                <label for="sobre">Conte um pouco sobre você:</label>
                 <textarea id="sobre" name="sobre" rows="4" cols="50" required></textarea><br><br>
             </div>
             <input type="submit" id="button"></input>
@@ -66,7 +66,7 @@
             .addEventListener('submit', function (event) {
                 event.preventDefault();
 
-                btn.value = 'Sending...';
+                btn.value = 'Enviando...';
 
                 const serviceID = 'default_service';
                 const templateID = 'template_zmmh948';
@@ -74,7 +74,7 @@
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
                         btn.value = 'Send Email';
-                        alert('Sent!');
+                        alert('Email enviado, boa sorte !');
                     }, (err) => {
                         btn.value = 'Send Email';
                         alert(JSON.stringify(err));
