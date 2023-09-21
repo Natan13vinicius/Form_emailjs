@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    font-family: "Gin W00 Round";
+
+}
+
+* {}
+
+textarea {
+    resize: none;
+}
+
+
+button {
+    font-family: "Gin W00 Round";
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 95%;
+}
+
+#button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: rgb(214, 174, 76);
+    border-radius: 3px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    font-family: "Gin W00 Round";
+    margin-top: -40px;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    background-color: rgb(29, 29, 29);
+}
