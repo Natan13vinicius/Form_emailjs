@@ -12,6 +12,12 @@ body {
     padding: 0;
 }
 
+.container img {
+    width: 35%;
+    margin: 20px 0;
+    /* display: flex; */
+}
+
 textarea {
     resize: none;
 }
@@ -75,4 +81,12 @@ footer {
     align-items: center;
     height: 12vh;
     background-color: rgb(29, 29, 29);
+}
+
+@media screen and (min-width:725px) {
+    .container img {
+        margin: 20px auto;
+        display: flex;
+
+    }
 }
